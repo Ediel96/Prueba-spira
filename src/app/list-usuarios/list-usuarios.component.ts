@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './list-usuarios.component.html',
   styleUrls: ['./list-usuarios.component.css']
 })
+
 export class ListUsuariosComponent implements OnInit {
 
 

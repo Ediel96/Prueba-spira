@@ -7,7 +7,9 @@ import { ListUsuariosComponent } from './list-usuarios/list-usuarios.component';
 //Angular Material 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
-import {MatListModule} from '@angular/material/list'; 
+import {MaterialModule } from './material-module';
+
+
 
 
 
@@ -23,10 +25,11 @@ import {UsuariosServices} from "./servicios/usuarios.service";
     BrowserAnimationsModule,
     MatButtonModule, 
     MatCheckboxModule,
-    MatListModule
+    MaterialModule
   ],
   providers: [
-    UsuariosServices
+    UsuariosServices,
+    
   ],
   bootstrap: [AppComponent]
 })
