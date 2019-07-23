@@ -1,13 +1,20 @@
 
     <br>
-    <button type="button" (click)="habilitar = (habilitar == true)? false: true" class="btn btn-dark">Mostaras</button> 
-    
+    <button mat-raised-button color="warn" (click)="habilitar = (habilitar == true)? false: true" class="btn btn-dark">{{habilitar==true? 'Ocultar': 'Mostrar'}}</button>
+    <!--
+    <button type="button" (click)="habilitar = (habilitar == true)? false: true" class="btn btn-dark">{{habilitar==true? 'Ocultar': 'Mostrar'}}</button> 
+    -->
     <br>
-
+<!--
     <div class="col-md-4 animated fadeIn fast" *ngIf="habilitar == true">
-            <li class="list-group-item">Usuarios con el correo</li>
-        <ul class="list-group" *ngFor="let usuario of usuarios" >
-            <li class="list-group-item">{{usuario.nombre}} :: correo {{usuario.correo}}</li>
-        </ul>
+        <li class="list-group-item">Usuarios con el correo</li>
+      <ul class="list-group" *ngFor="let usuario of usuarios" >
+        <li class="list-group-item">{{usuario.nombre}} :: correo {{usuario.correo}}</li>
+      </ul>
     </div>
+-->
+<mat-list role="list" class="col-md-4 animated fadeIn fast" *ngIf="habilitar == true"> <h2 mat-subheader>Usuarios con el correo</h2>
+ <mat-list-item class="list-group" *ngFor="let usuario of usuarios"> {{usuario.nombre}} :: correo {{usuario.correo}} </mat-list-item>
+</mat-list>
+
     
