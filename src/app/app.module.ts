@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ListUsuariosComponent } from './list-usuarios/list-usuarios.component';
 
+//Http
+import { HttpClientModule } from "@angular/common/http";
+
 //Angular Material 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
@@ -25,7 +28,8 @@ import {UsuariosServices} from "./servicios/usuarios.service";
     BrowserAnimationsModule,
     MatButtonModule, 
     MatCheckboxModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [
     UsuariosServices,
