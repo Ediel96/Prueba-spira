@@ -13,9 +13,6 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MaterialModule } from './material-module';
 
 
-
-
-
 import {UsuariosServices} from "./servicios/usuarios.service";
 
 @NgModule({
